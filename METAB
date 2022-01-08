@@ -1,5 +1,4 @@
 
-
 local InsertedObjects = Instance.new("ScreenGui")
 local ImageButton = Instance.new("ImageButton")
 local ImageLabel = Instance.new("ImageLabel")
@@ -95,7 +94,7 @@ ImageLabel_2.ScaleType = Enum.ScaleType.Tile
 
 -- Scripts:
 
-local function ALQP_fake_script() -- ImageButton.LocalScript 
+local function SPCPLY_fake_script() -- ImageButton.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -103,8 +102,8 @@ local function ALQP_fake_script() -- ImageButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(ALQP_fake_script)()
-local function LWBIZ_fake_script() -- ImageLabel.LocalScript 
+coroutine.wrap(SPCPLY_fake_script)()
+local function DKYE_fake_script() -- ImageLabel.LocalScript 
 	local script = Instance.new('LocalScript', ImageLabel)
 
 	
@@ -182,8 +181,8 @@ local function LWBIZ_fake_script() -- ImageLabel.LocalScript
 	
 	
 end
-coroutine.wrap(LWBIZ_fake_script)()
-local function PTBQ_fake_script() -- ImageLabel.LocalScript 
+coroutine.wrap(DKYE_fake_script)()
+local function DRLV_fake_script() -- ImageLabel.LocalScript 
 	local script = Instance.new('LocalScript', ImageLabel)
 
 	while true do
@@ -201,16 +200,16 @@ local function PTBQ_fake_script() -- ImageLabel.LocalScript
 		wait(.7)
 	end
 end
-coroutine.wrap(PTBQ_fake_script)()
-local function UBZS_fake_script() -- CloseButton.LocalScript 
+coroutine.wrap(DRLV_fake_script)()
+local function YVMKZ_fake_script() -- CloseButton.LocalScript 
 	local script = Instance.new('LocalScript', CloseButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(UBZS_fake_script)()
-local function KPEPLEZ_fake_script() -- CloseButton.ANIME 
+coroutine.wrap(YVMKZ_fake_script)()
+local function RBIKW_fake_script() -- CloseButton.ANIME 
 	local script = Instance.new('LocalScript', CloseButton)
 
 	local btn = script.Parent
@@ -253,8 +252,8 @@ local function KPEPLEZ_fake_script() -- CloseButton.ANIME
 		end
 	end)
 end
-coroutine.wrap(KPEPLEZ_fake_script)()
-local function UDXUA_fake_script() -- Button2.ANIME 
+coroutine.wrap(RBIKW_fake_script)()
+local function WKZVQ_fake_script() -- Button2.ANIME 
 	local script = Instance.new('LocalScript', Button2)
 
 	local btn = script.Parent
@@ -297,8 +296,8 @@ local function UDXUA_fake_script() -- Button2.ANIME
 		end
 	end)
 end
-coroutine.wrap(UDXUA_fake_script)()
-local function GPWYY_fake_script() -- Button2.METAB SCRIPT 
+coroutine.wrap(WKZVQ_fake_script)()
+local function NVKN_fake_script() -- Button2.METAB SCRIPT 
 	local script = Instance.new('LocalScript', Button2)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -340,7 +339,8 @@ local function GPWYY_fake_script() -- Button2.METAB SCRIPT
 		if toggle == true then
 			_G.Toggle = true
 			while _G.Toggle do
-	
+				game:GetService("ReplicatedStorage").GiveSword:Destroy()
+				wait(1)
 				local am = 50
 				for i = 1,am do
 					for _,obj in pairs(game:GetDescendants()) do
@@ -355,7 +355,8 @@ local function GPWYY_fake_script() -- Button2.METAB SCRIPT
 	
 		if toggle == false then 
 			_G.Toggle = false
-	
+				game:GetService("ReplicatedStorage").GiveSword:Destroy()
+				wait(1)
 				local am = 50
 				for i = 1,am do
 					for _,obj in pairs(game:GetDescendants()) do
@@ -373,11 +374,11 @@ local function GPWYY_fake_script() -- Button2.METAB SCRIPT
 	
 	
 end
-coroutine.wrap(GPWYY_fake_script)()
-local function APQC_fake_script() -- ImageLabel_2.Script 
+coroutine.wrap(NVKN_fake_script)()
+local function VTVV_fake_script() -- ImageLabel_2.Script 
 	local script = Instance.new('Script', ImageLabel_2)
 
 	wait(4)
 	script.Parent:Destroy()
 end
-coroutine.wrap(APQC_fake_script)()
+coroutine.wrap(VTVV_fake_script)()
